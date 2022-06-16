@@ -1,0 +1,30 @@
+{
+  "name": "personal-blog-manager",
+  "version": "1.0.0",
+  "description": "A libre personal blog management tool",
+  "repository": "https://github.com/kenliten/personal-blog-manager",
+  "author": "Otoniel Reyes <kenliten@otonielreyes.com>",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "start": "node ./bin/www",
+    "watch": "nodemon ./bin/www",
+    "test": "mocha",
+    "debug": "DEBUG=personal-blog-manager:* npm start",
+    "start:dev": "DEBUG=personal-blog-manager:* npm run watch"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.4",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "node-sass-middleware": "^1.0.1",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*",
+    "nodemon": "^2.0.16"
+  }
+}
